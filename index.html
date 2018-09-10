@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Documentation Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.js"></script>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<nav id="navbar">
+			<header><h1>Semantic UI Documentation<h1></header>
+			<ul class="main-nav">
+				<hr>
+				<li><a class="nav-link" href="#INTRODUCTION">Introduction</a></li>
+				<hr>
+				<li><a class="nav-link" href="#INSTALLING">Installing</a></li>
+				<hr>
+				<li><a class="nav-link" href="#ELEMENTS">Elements</a></li>
+				<hr>
+				<li><a class="nav-link" href="#HEADER">Header</a></li>
+				<hr>
+				<li><a class="nav-link" href="#BUTTON">Button</a></li>
+				<hr>
+				<li><a class="nav-link" href="#MESSAGE">Message</a></li>
+				<hr>
+				<li><a class="nav-link" href="#ICON">Icon</a></li>
+				<hr>
+				<li><a class="nav-link" href="#INPUT">Input</a></li>
+				<hr>
+				<li><a class="nav-link" href="#PROGRESS">Progress</a></li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="INTRODUCTION">
+				<header>Introduction</header>
+				<p>Semantic UI is a modern front-end development framework, powered by LESS and jQuery. It has a sleek, subtle, and flat design look that provides a lightweight user experience.
+
+				According to the Semantic UI website, the goal of the framework is to empower designers and developers “by creating a language for sharing UI”. They do this by leveraging a semantic, descriptive language for its classes and naming conventions. Instead of using abbreviations, as other frameworks do, it utilizes real words in a manner closer to plain English.</p>
+				<p>Semantic UI is unique in two ways. First is the way the framework is structured. It uses five descriptive categories to define re-usable UI components.
+					<li>A <strong>UI Element</strong> is a basic building block. It can appear alone or in uniform groups. For example, a button can be independent or put in a button group.</li>
+					<li>A <strong>UI Collection</strong> is a group of different kinds of elements that are interdependent. For example, a web form can have buttons, inputs, checkboxes, icons, and so forth.</li>
+					<li>A <strong>UI View</strong> represents a common piece of website content. For example, a feed or comments section.</li>
+					<li>A <strong>UI Module</strong> is a component with interactive JavaScript-based functionality. Examples include an accordion, dimmer, modal, and so on.</li>
+					<li>A <strong>UI Behavior</strong> is a component that can’t exist independently, but instead is used to inject functionality into other components. For example, the Form Validation behavior provide validation functionality for the Form component.</li>
+				 </p>
+				
+				 <p>Almost every component has types, states and variations. For example, some of the button component’s types include: standard button, button with icon, animated button and a button can be in the active, disabled, or loading state. Finally, a button can vary in size and color, and can be formatted as basic, social, fluid, toggle, and more. This scheme gives you a great amount of flexibility in a component’s appearance.
+
+				 As you can see, Semantic UI is not only meaningful and well structured in terms of naming its classes but also in naming, defining, and describing its components.
+
+				 <a href="https://www.sitepoint.com/introducing-semantic-ui-component-library/">[Source]</a></p>
+			</section>
+			<section class="main-section" id="INSTALLING">
+				<header>Installing</header>
+				<h2>Install Node JS</h2>
+				<p>If you are unfamiliar with setting up NodeJS you can follow the steps below, or check out the <a href="https://nodejs.org/download/">download page</a> on <a href="https://nodejs.org/en/">nodejs.org</a></p>
+				<h2>Install Semantic UI</h2>
+				<div class="code-box">
+					<code>
+						npm install semantic-ui --save
+						cd semantic/
+						gulp build
+					</code>
+				</div>
+				<h2>Include in Your HTML</h2>
+				<p>Running the gulp build tools will compile CSS and Javascript for use in your project. Just link to these files in your HTML along with the latest jQuery.</p>
+				<div class="code-box">
+					<code>
+						&lt;link <br>rel="stylesheet" type="text/css" <br>href="semantic/dist/semantic.min.css"&gt;<br>&lt;script src="https://code.jquery.com/jquery-3.1.1.min.js"<br> integrity="sha256-hVVnYaiADRTO2PzUGmuLJr<br>8BLUSjGIZsDYGmIJLv2b8="<br>crossorigin="anonymous"&gt;&lt;/script&gt;<br>&lt;script src="semantic/dist/semantic.min.js"&gt;&lt;/script&gt;
+					</code>
+			 	</div>
+			 	<h2>Updating</h2>
+			 	<p>Semantic's NPM install script will automatically update Semantic UI to the latest version while preserving your site and packaged themes.</p>
+			 	<div class="code-box">
+			 		<code>npm update</code>
+				</div>
+			</section>
+			<section class="main-section" id="ELEMENTS">
+				<header>Elements</header>
+				<p>Elements are the basic building blocks of a website. UI Elements are the smallest useful unit for describing page content, and do not contain other elements inside themselves.</p>
+				<h2>Plurality</h2>
+				<p>Element usually exist by themselves, but they my also be grouped together with other elements of their kind. This forms a plural definition of an element. 
+				The look and feel of the plural may change to show a relationship, and plural definitions can often share many of the same variations as singular definitions.</p>
+			</section>
+			<section class="main-section" id="HEADER">
+				<header>Header</header>
+				<p>Headers may be oriented to give the hierarchy of a section in the context of the page. </p>
+				<h1>Huge Header</h1>
+				<img class="ui-img" alt="short-paragraph" src="https://semantic-ui.com/images/wireframe/short-paragraph.png">
+				<h3>Medium Header</h3>
+				<img class="ui-img" alt="short-paragraph" src="https://semantic-ui.com/images/wireframe/short-paragraph.png">
+				<h4>Small Header</h4>
+				<img class="ui-img" alt="short-paragraph" src="https://semantic-ui.com/images/wireframe/short-paragraph.png">
+				<br>
+				<p>Code:
+				<code>
+					<div class="code-box">
+						&lt;h1 class="ui header">First header&lt;/h1&gt;<br>
+						&lt;h2 class="ui header">Second header&lt;/h2&gt;<br>
+						&lt;h3 class="ui header">Third header&lt;/h3&gt;<br>
+						&lt;h4 class="ui header">Fourth header&lt;/h4&gt;<br>
+						&lt;h5 class="ui header">Fifth header&lt;/h5&gt;<br>
+					</div>
+				</code>
+			</section>
+			<section class="main-section" id="BUTTON">
+				<header>Button</header>
+				<p>These are the basic Semantic UI buttons, with color and size variations</p>
+				<button class="ui button">
+  					Follow
+				</button>
+				<div class="code-box">
+					<code>
+						&lt;button class="ui button"&gt;
+						Follow
+						&lt;/button&gt;
+					</code>
+				</div>
+					  <button class="ui standard red button">Red</button>
+					  <button class="ui standard orange button">Orange</button>
+					  <button class="ui standard teal button">Teal</button>
+				<div class="code-box">
+					<code>
+						&lt;button class="ui standard red button"&gt;Red&lt;/button&gt;<br>
+						&lt;button class="ui standard orange button"&gt;Orange&lt;/button&gt;<br>
+						&lt;button class="ui standard teal button"&gt;Teal&lt;/button&gt;<br>
+					</code>
+				</div>
+				<button class="medium ui button">Medium</button>
+				<button class="large ui button">Large</button>
+				<button class="big ui button">Big</button>
+				<div class="code-box">
+					<code>
+						&lt;button class="medium ui button"&gt;Medium&lt;/button&gt;<br>
+						&lt;button class="large ui button"&gt;Large&lt;/button&gt;<br>
+						&lt;button class="big ui button"&gt;Big&lt;/button&gt;<br>
+					</code>
+				</div>
+			</section>
+			<section class="main-section" id="MESSAGE">
+				<header>Message</header>
+				<p>A message displays information that explains nearby content. Semantic UI includes standard messages, icon messages, list messages. Here is an example.</p>
+				<div id="message-box" class="ui icon message">
+				 	<i class="inbox icon"></i>
+				  	<div class="content">
+				    	<div class="header">
+				    		Have you heard about our mailing list?
+				    	</div>
+				    	<p>Get the best news in your e-mail every day.</p>
+				 	</div>
+				</div>
+					<div class="code-box">
+					<code>
+						&lt;div class="ui icon message"&gt;<br>
+						&lt;i class="inbox icon"&gt;&lt;/i&gt;<br>
+						&lt;div class="content"&gt;<br>
+						&lt;div class="header"&gt;<br>
+						Have you heard about our mailing list?<br>
+						&lt;/div&gt;<br>
+						&lt;p&gt;Get the best news in your e-mail every day.&lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/div&gt;
+					</code>
+				</div>
+			</section>
+			<section class="main-section" id="ICON">
+				<header>Icon</header>
+				<p>Semantic includes a complete port of Font Awesome 5.0.8 designed by the FontAwesome team for its standard icon set.<p>
+				<ul>
+					<li>Audio & Video</li>
+					<div class="icon-set">
+						<i class="film icon"></i>
+						<i class="volume up icon"></i>
+						<i class="sync icon"></i>
+						<i class="video icon"></i>
+						<i class="rss icon"></i>
+					</div>
+					<li>Code</li>
+					<div class="icon-set">
+						<i class="code icon"></i>
+						<i class="user secret icon"></i>
+						<i class="terminal icon"></i>
+						<i class="keyboard outline icon"></i>
+						<i class="coffee icon"></i>
+					</div>
+					<li>Communication</li>
+					<div class="icon-set">
+						<i class="address card outline icon"></i>
+						<i class="comment outline icon"></i>
+						<i class="paper plane outline icon"></i>
+						<i class="mobile icon"></i>
+						<i class="wifi icon"></i>
+					</div>
+					<li>Design</li>
+					<div class="icon-set">
+						<i class="crop icon"></i>
+						<i class="eraser icon"></i>
+						<i class="save outline icon"></i>
+						<i class="paint brush icon"></i>
+						<i class="cut icon"></i>
+					</div>
+					<li>Maps</li>
+					<div class="icon-set">
+						<i class="map outline icon"></i>
+						<i class="map signs icon"></i>
+						<i class="rocket icon"></i>
+						<i class="subway icon"></i>
+						<i class="suitcase icon"></i>
+					</div>
+					<li>Objects</li>
+					<div class="icon-set">
+						<i class="birthday cake icon"></i>
+						<i class="bookmark icon"></i>
+						<i class="umbrella icon"></i>
+						<i class="cloud icon"></i>
+						<i class="snowflake outline icon"></i>
+					</div>
+				</ul>
+			</section>
+			<section class="main-section" id="INPUT">
+				<header>Input</header>
+				<p>An input is a field used to elicit a response from a user.</p>
+					<div>
+						<div class="ui input">
+		  				<input type="text" placeholder="Search...">
+  						</div>
+  						<div class="code-box">
+		  					<code>
+			  					&lt;div class="ui input"&gt;<br>
+			  					&lt;input type="text" placeholder="Search..."&gt;
+		  					</code>
+  						</div>
+					</div>
+					<div>
+						<div class="ui left icon input loading">
+	  						<input type="text" placeholder="Search...">
+	  						<i class="search icon"></i>
+						</div>
+  						<div class="code-box">
+		  					<code>
+			  					&lt;class="ui left icon input loading"&gt;<br>
+			  					&lt;input type="text" placeholder="Search..."&gt;<br>
+			  					&lt;i class="search icon"&gt;&lt;/i&gt;
+		  					</code>
+  						</div>
+					</div>
+			</section>
+			<section class="main-section" id="PROGRESS">
+				<header>Progress</header>
+				<p>A progress bar shows the progression of a task.</p>
+				<div id="progress-bar">
+					<div class="ui progress">
+  					<div class="bar">
+    				<div class="progress"></div>
+  					</div>
+  					<div class="label">Uploading Files</div>
+					</div>
+				</div>
+				<div class="code-box">
+		  					<code>
+			  					&lt;class="ui progress"&gt;<br>
+			  					&lt;class="bar"&gt;<br>
+			  					&lt;class="progress"&gt;&lt;/div&gt;<br>
+			  					&lt;/div&gt;</br>
+			  					&lt;class="label"&gt;Uploading Files&lt;/div&gt;</br>
+			  					&lt;/div&gt;
+		  					</code>
+  						</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>
