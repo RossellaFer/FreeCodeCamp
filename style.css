@@ -1,0 +1,49 @@
+
+body {
+	font-family: 'Titan One', cursive;
+}
+
+h1 {
+	padding-top: 10px;
+	font-size: 50px;
+}
+h2 {
+	font-size: 40px;
+	margin-left: 4%;
+}
+
+h3 {
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+h4 {
+	font-family: Open Sans;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+p {
+	font-family: Open Sans;
+	padding: 20px;
+	text-align: justify;
+	font-size: 17px;
+	margin: 0 30px;
+}
+
+.thumbnail {
+	max-width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+
+#main_image {
+	display: block;
+	margin: 0 auto;
+	border: solid 1px black;
+}
+
+
+#Ducktales {
+	margin-top: 10%;
+}
