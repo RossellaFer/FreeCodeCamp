@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E3 2018 survey form</title>
+	  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<form id="survey-form">
+	<p id="description">Fill in the form to let us know what you think of this year's <strong>E3 announcements</strong>.</p>
+	<div class="information-field">
+	<label for="name-label"> *Name: </label>
+	<input type="text" class="input-field" name="firstname" id="firstname" placeholder="Enter your name" required>
+	</div>
+	<br>
+	<div class="information-field">
+	<label for="email-label">*Email: </label>
+	<input type="email" class="input-field" name="email" id="email" placeholder="Enter your email" required>
+	</div>
+	<br>
+	<div class="information-field">
+	<label for="number-label">*Age:   </label>
+	<input type="number" class="input-field" name="age" id="number" placeholder="Age" required>
+    </div>
+	<br>
+	<label for="medium">How did you follow this year's E3? </label>
+	<select id="dropdown-medium">
+		<option value="" disabled selected>Select one option</option>
+		<option value="twitter">Twitter</option>
+		<option value="twitch">Livestream on Twitch</option>
+		<option value="youtube">Livestream on Youtube</option>
+		<option value="youtuber channel">Commentary on Youtube</option>
+		<option value="magazine">Online magazine updates</option>
+	</select>
+	<fieldset>
+		<legend>Where are you from?</legend>
+		<input id="Europe" type="radio" name="region" value="Europe">
+		<label for="Europe">Europe</label><br>
+		<input id="America" type="radio" name="region" value="America">
+		<label for="America">America</label><br>
+		<input id="Africa" type="radio" name="region" value="Africa">
+		<label for="Africa">Africa</label><br>
+		<input id="Asia" type="radio" name="region" value="Asia">
+		<label for="Asia">Asia</label><br>
+		<input id="Australia" type="radio" name="region" value="Australia">
+		<label for="Australia">Australia</label>
+	</fieldset>
+	<fieldset>
+		<legend>Which games are you going to buy?</legend>
+		<div id="optionbox">
+		<div class="gameoption">
+			<input id="Overcooked 2" type="checkbox" name="Overcooked 2" value="Overcooked 2">
+			<label for="Overcooked 2"><img title="Overcooked 2" alt="Overcooked 2" src="https://www.team17.com/wp-content/uploads/2018/06/FeaturedImage.png"></label>
+		</div>
+		<div class="gameoption">
+			<input id="Fallout 76" type="checkbox" value="Fallout 76">
+			<label for="Fallout 76"><img title="Fallout 76" alt="Fallout 76" src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/xlarge/public/field/image/2018/06/fallout-76-pip-boy.jpg?itok=osB_N2Wh"></label>
+		</div>
+		<div class="gameoption">
+			<input id="Spiderman" type="checkbox" value="Spiderman">
+			<label for="Spiderman"><img title="Spiderman" alt="Spiderman" src="https://i.ytimg.com/vi/UN26GS8VghY/maxresdefault.jpg"></label>
+		</div>
+		<div class="gameoption">
+			<input id="Last of us part II" type="checkbox" value="Last of us part II">
+			<label for="Last of us part II"><img title="Last of us part II" alt="Last of us part II" src="https://cdn.images.express.co.uk/img/dynamic/143/590x/The-Last-of-Us-2-release-date-970868.jpg?r=1528375525343"></label>
+		</div>
+		<div class="gameoption">
+			<input id="Supermario Party" type="checkbox" value="Supermario Party">
+			<label for="Supermario Party"><img title="Supermario Party" alt="Supermario party" src="http://www.siliconera.com/wordpress/wp-content/uploads/2018/06/supermarioparty3_thumb.png"></label>
+		</div>
+		<div class="gameoption">
+			<input id="Death Stranding" type="checkbox" value="Death Stranding">
+			<label for="Death Stranding"><img title="Death Stranding" alt="Death Stranding" src="https://gbatemp.net/attachments/death-stranding-jpg.131208/"></label>
+		</div>
+		<div class="gameoption">
+			<input id="Elder Scrolls 6" type="checkbox" value="Elder Scrolls 6">
+			<label for="Elder Scrolls 6"><img title="Elder Scrolls 6" alt="Elder Scrolls 6" src="http://godhatesgeeks.com/wp-content/uploads/2018/06/Elder-Scrolls-6-Gameplay.jpg"></label>
+		</div>
+		<div class="gameoption">
+			<input id="Assassin's Creed Odyssey" type="checkbox" value="Assassin's Creed Odyssey">
+			<label for="Assassin's Creed Odyssey"><img title="Assassin's Creed Odyssey" alt="Assassin's Creed Odyssey" src="https://static1.squarespace.com/static/55ef0e29e4b099e22cdc9eea/t/5b1f12fd6d2a73641d068ab1/1528763135475/?format=750w"></label>
+		</div>
+		<div class="gameoption">
+			<input id="Kingdom Hearts 3" type="checkbox" value="Kingdom Hearts 3">
+			<label for="Kingdom Hearts 3"><img title="Kingdom Hearts 3" alt="Kingdom Hearts 3" src="https://cdn.gamerant.com/wp-content/uploads/kingdom-hearts-final-fantasy-worlds.jpg.optimal.jpg"></label>
+		</div>	
+		<div class="gameoption">
+			<input id="Super Smash Bros" type="checkbox" value="Super Smash Bros">
+			<label for="Super Smash Bros"><img title="Super Smash Bros" alt="Super Smash Bros" src="https://i.gadgets360cdn.com/large/super-smash-bros-ultimate_1528826934014.jpg?output-quality=80"></label>
+		</div>	
+		<div class="gameoption">
+			<input id="Resident Evil 2" type="checkbox" value="Resident Evil 2">
+			<label for="Resident Evil 2"><img title="Resident Evil 2" alt="Resident Evil 2" src="https://cdn3.dualshockers.com/wp-content/uploads/2018/06/Resident-Evil-2.png"></label>
+		</div>	
+		<div class="gameoption">
+			<input id="Ghost of Tsushima" type="checkbox" value="Ghost of Tsushima">
+			<label for="Ghost of Tsushima"><img title="Ghost of Tsushima" alt="Ghost of Tsushima" src="https://i.ytimg.com/vi/Udnv0TC8AgQ/maxresdefault.jpg"></label>
+		</div>	
+	</div>
+	</fieldset>
+	<label for="comments">Additional comments:</label><br>
+	<textarea id="comments" name="commentstext"></textarea>
+	<div id="buttonarea">
+		<button type="submit" id="submit">Submit</button>
+	</div>
+</form>
+</body>
+</html>
